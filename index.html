@@ -39,23 +39,17 @@
           
           if(!args.slideChanged) return false;
           
-          $(args.sliderObject).find('.text').attr('style', '');
+          $(args.sliderObject).find('.text').removeClass('animated');
           
-          $(args.currentSlideObject).find('.text').animate({
-            'margin-right': '-50px',
-            opacity: '0.8'
-          }, 800);
+          $(args.currentSlideObject).find('.text').addClass('animated')
         
         }
         
         function sliderLoaded(args) {
             
-          $(args.sliderObject).find('.text').attr('style', '');
+          $(args.sliderObject).find('.text').removeClass('animated');
           
-          $(args.currentSlideObject).find('.text').animate({
-            'margin-right': '-50px',
-            opacity: '0.8'
-          }, 800);
+          $(args.currentSlideObject).find('.text').addClass('animated')
           
           slideChange(args);
         }
@@ -74,27 +68,27 @@
         <div class = 'slider'>
           <div class = 'item item1'>
             <div class="inner">
-              <div class="text"><span>When you don’t know what you believe, everything becomes an argument. Everything is debatable. But when you stand for something, decisions are obvious.</span></div>
+              <div class="text fadeInRight"><span>When you don’t know what you believe, everything becomes an argument. Everything is debatable. But when you stand for something, decisions are obvious.</span></div>
             </div>
           </div>
           <div class = 'item item2'>
             <div class="inner">
-              <div class="text"><span>What you do is what matters, not what you think or say or plan.</span></div>
+              <div class="text fadeInRight"><span>What you do is what matters, not what you think or say or plan.</span></div>
             </div>
           </div>
           <div class = 'item item3'>
             <div class="inner">
-              <div class="text"><span>Plus, if you’re a copycat, you can never keep up. You’re always in a passive position. You never lead; you always follow. You give birth to something that’s already behind the times—just a knockoff, an inferior version of the original. That’s no way to live.</span></div>
+              <div class="text fadeInRight"><span>Plus, if you’re a copycat, you can never keep up. You’re always in a passive position. You never lead; you always follow. You give birth to something that’s already behind the times—just a knockoff, an inferior version of the original. That’s no way to live.</span></div>
             </div>
           </div>
           <div class = 'item item4'>
             <div class="inner">
-              <div class="text"><span>Workaholics aren't heroes. They don't save the day, they just use it up. The real hero is home because she figured out a faster way.</span></div>
+              <div class="text fadeInRight"><span>Workaholics aren't heroes. They don't save the day, they just use it up. The real hero is home because she figured out a faster way.</span></div>
             </div>
           </div>
           <div class = 'item item5'>
             <div class="inner">
-              <div class="text"><span>If circumstances change, your decisions can change. Decisions are temporary.</span></div>
+              <div class="text fadeInRight"><span>If circumstances change, your decisions can change. Decisions are temporary.</span></div>
             </div>
           </div>
         </div>
