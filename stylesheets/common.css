@@ -64,8 +64,8 @@
   opacity: 0;
   filter: alpha(opacity=0);
   position: absolute;
-  right: 150px; 
-  top: 150px; 
+  right: 10px; 
+  top: 10px; 
   width: 50%;
   padding: 20px;
 }
