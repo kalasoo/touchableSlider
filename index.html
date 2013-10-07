@@ -30,6 +30,7 @@
           keyboardControls: true,
           infiniteSlider: true,
           autoSlide: true,
+          onSlideComplete: slideComplete,
           onSliderLoaded: sliderLoaded,
           onSlideChange: slideChange,
         });
@@ -37,6 +38,9 @@
               
           $('.sliderContainer .slideSelectors .item').removeClass('selected');
           $('.sliderContainer .slideSelectors .item:eq(' + (args.currentSlideNumber - 1) + ')').addClass('selected');
+
+        }
+        function slideComplete(args) {
           
           if(!args.slideChanged) return false;
           
@@ -47,6 +51,7 @@
           } else {
             $(args.currentSlideObject).find('.text').addClass('fadeInLeft')
           }
+          
         }
         
         function sliderLoaded(args) {
@@ -56,6 +61,7 @@
           $(args.currentSlideObject).find('.text').addClass('fadeIn')
           
           slideChange(args);
+          
         }
         
       }); 
