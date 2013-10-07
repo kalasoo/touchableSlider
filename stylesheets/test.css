@@ -1,0 +1,4 @@
+.iosSlider .slider .item .inner .text {
+	opacity: 1;
+	filter: alpha(opacity=1);
+}

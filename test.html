@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    
+    <meta name = "viewport" content = "width=device-width, minimum-scale=1, maximum-scale=1">
+    
+    <!-- META -->
+    <meta charset = "utf-8">
+    
+    <!-- CSS -->
+    <link href='http://fonts.googleapis.com/css?family=Parisienne|Alegreya' rel='stylesheet' type='text/css'>
+    <link rel = "stylesheet" href = "stylesheets/default.css" />
+    <link rel = "stylesheet" media = "screen" href = "stylesheets/common.css" />
+    <link rel = "stylesheet" href = "stylesheets/test.css" />
+
+    
+    <!-- JS -->
+    <script src = "javascripts/jquery.min.js"></script>
+    <script src = "javascripts/jquery.easing.js"></script>
+    
+    <!-- iosSlider plugin -->
+    <script src = "javascripts/jquery.iosslider.js"></script>
+    
+    <script type="text/javascript">
+      $(document).ready(function() {
+        
+        $('.iosSlider').iosSlider({
+          snapToChildren: true,
+          desktopClickDrag: true,
+          keyboardControls: true
+        });
+      }); 
+    </script>
+    
+    <title>iosScripts/iosSlider demos - Full Screen Slides</title>
+    
+  </head>
+  
+  <body>
+    
+    <div class = 'sliderContainer'>
+      <div class = 'iosSlider'>
+        <div class = 'slider'>
+          <div class = 'item item1'>
+            <div class="inner">
+              <div class="text animated"><span>When you don’t know what you believe, everything becomes an argument. Everything is debatable. But when you stand for something, decisions are obvious.</span></div>
+            </div>
+          </div>
+          <div class = 'item item2'>
+            <div class="inner">
+              <div class="text animated"><span>What you do is what matters, not what you think or say or plan.</span></div>
+            </div>
+          </div>
+          <div class = 'item item3'>
+            <div class="inner">
+              <div class="text animated"><span>Plus, if you’re a copycat, you can never keep up. You’re always in a passive position. You never lead; you always follow. You give birth to something that’s already behind the times—just a knockoff, an inferior version of the original. That’s no way to live.</span></div>
+            </div>
+          </div>
+          <div class = 'item item4'>
+            <div class="inner">
+              <div class="text animated"><span>Workaholics aren't heroes. They don't save the day, they just use it up. The real hero is home because she figured out a faster way.</span></div>
+            </div>
+          </div>
+          <div class = 'item item5'>
+            <div class="inner">
+              <div class="text animated"><span>If circumstances change, your decisions can change. Decisions are temporary.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+            
+  </body>
+  
+</html>
