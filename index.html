@@ -29,7 +29,6 @@
           desktopClickDrag: true,
           keyboardControls: true,
           infiniteSlider: true,
-          onSlideComplete: slideComplete,
           onSliderLoaded: sliderLoaded,
           onSlideChange: slideChange,
         });
@@ -37,10 +36,6 @@
               
           $('.sliderContainer .slideSelectors .item').removeClass('selected');
           $('.sliderContainer .slideSelectors .item:eq(' + (args.currentSlideNumber - 1) + ')').addClass('selected');
-        
-        }
-        
-        function slideComplete(args) {
           
           if(!args.slideChanged) return false;
           
@@ -49,8 +44,8 @@
           $(args.currentSlideObject).find('.text').animate({
             'margin-right': '-100px',
             opacity: '0.8'
-          }, 400, 'easeOutQuint');
-          
+          }, 800);
+        
         }
         
         function sliderLoaded(args) {
@@ -60,7 +55,7 @@
           $(args.currentSlideObject).find('.text').animate({
             'margin-right': '-100px',
             opacity: '0.8'
-          }, 400, 'easeOutQuint');
+          }, 800);
           
           slideChange(args);
         }
