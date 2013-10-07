@@ -1,0 +1,79 @@
+.sliderContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+.iosSlider {
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.iosSlider .slider {
+  width: 100%;
+  height: 100%;
+}
+
+.iosSlider .slider .item {
+  float: left;
+  width: 100%;
+  height: 100%;
+  background: no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.iosSlider .slider .item1 {
+  background-image: url('../images/image1.jpg');
+}
+
+.iosSlider .slider .item2 {
+  background-image: url('../images/image2.jpg');
+}
+
+.iosSlider .slider .item3 {
+  background-image: url('../images/image3.jpg');
+}
+
+.iosSlider .slider .item4 {
+  background-image: url('../images/image4.jpg');
+}
+
+.iosSlider .slider .item5 {
+  background-image: url('../images/image5.jpg');
+}
+
+.iosSlider .slider .item .inner {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.iosSlider .slider .item .inner .text {
+  background-color: rgba(0,0,0, 0.8);
+  opacity: 0;
+  filter: alpha(opacity=0);
+  position: absolute;
+  right: 150px; 
+  top: 150px; 
+  width: 50%;
+  padding: 20px;
+}
+
+.iosSlider .slider .item .inner .text span {
+  color: #fff;
+  font-family: 'Alegreya', serif;
+  font-size: 200%;
+  line-height: 73px;
+  padding: 0 8px;
+}
