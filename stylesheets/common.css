@@ -64,8 +64,8 @@
   opacity: 0;
   filter: alpha(opacity=0);
   position: absolute;
-  right: 10px; 
-  top: 10px; 
+  right: 150px; 
+  top: 150px; 
   width: 50%;
   padding: 20px;
 }
@@ -76,6 +76,13 @@
   font-size: 135%;
   line-height: 50px;
   padding: 0 8px;
+}
+
+@media only screen and (max-width: 727px) {
+  .iosSlider .slider .item .inner .text {
+    top: 20px; 
+    left: 10px; right: 10px; 
+  }
 }
 
 /* Animation */
